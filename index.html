@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VioletStore - Clean Beauty</title>
+    <link rel="stylesheet" href="CSS/main.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <button class="menu-toggle" id="menuToggle">
+                    <span class="menu-icon">☰</span>
+                </button>
+                <h1 class="logo">VioletStore</h1>
+                
+                <nav class="nav" id="mainNav">
+                    <a href="#" data-view="home">Inicio</a>
+                    <a href="#" data-view="blog">Blog</a>
+                    <a href="#" data-view="advisor">Asesoría</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="icon-btn" id="cartBtn">
+                        <span class="icon">🛒</span>
+                        <span class="badge" id="cartBadge">0</span>
+                    </button>
+                    <button class="icon-btn" id="userBtn">
+                        <span class="icon">👤</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+
+            <section class="hero" id="heroSection">
+                <h2>Bienvenido a VioletStore</h2>
+                <p class="hero-subtitle">"La Transparencia es Nuestro Ingrediente Secreto"</p>
+                <p class="hero-text">Clean Beauty • 100% Vegano • Cruelty-Free</p>
+            </section>
+
+            <section class="search-section" id="searchSection">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar por nombre, categoría o ingrediente...">
+                    <button class="search-btn">🔍</button>
+                </div>
+                
+                <div class="filters" id="filterButtons">
+
+                </div>
+            </section>
+
+            <section class="products-grid" id="productsGrid">
+
+            </section>
+
+            <div class="modal" id="productModal">
+                <div class="modal-content">
+                    <button class="modal-close" id="closeModal">×</button>
+                    <div id="productDetail">
+
+                    </div>
+                </div>
+            </div>
+
+            <section class="cart-view hidden" id="cartView">
+                <h2>Carrito de Compras</h2>
+                <div id="cartItems">
+
+                </div>
+                <div class="cart-summary" id="cartSummary">
+
+                </div>
+            </section>
+
+            <section class="auth-view hidden" id="authView">
+                <div class="auth-container">
+                    <h2 id="authTitle">Iniciar Sesión</h2>
+                    <form id="authForm">
+                        <div class="form-group hidden" id="nameGroup">
+                            <input type="text" id="nameInput" placeholder="Nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="emailInput" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="passwordInput" placeholder="Contraseña" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                        <button type="button" class="btn btn-link" id="toggleAuthMode">
+                            ¿No tienes cuenta? Regístrate
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="profile-view hidden" id="profileView">
+                <h2>Mi Perfil</h2>
+                <div class="profile-info" id="profileInfo">
+
+                </div>
+                <h3>Historial de Pedidos</h3>
+                <div class="orders-list" id="ordersList">
+
+                </div>
+            </section>
+
+
+            <section class="blog-view hidden" id="blogView">
+                <h2>Blog Clean Beauty</h2>
+                <div class="blog-grid" id="blogGrid">
+
+                </div>
+            </section>
+
+            <section class="advisor-view hidden" id="advisorView">
+                <div class="advisor-container">
+                    <h2>Asesoría Personalizada</h2>
+                    <p>Conecta con nuestros Beauty Coaches para una rutina de belleza ética y efectiva.</p>
+                    <form id="advisorForm">
+                        <div class="form-group">
+                            <textarea id="advisorMessage" rows="4" placeholder="Cuéntanos sobre tu tipo de piel y necesidades..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-title">VioletStore</p>
+            <p>"La Transparencia es Nuestro Ingrediente Secreto"</p>
+            <p class="footer-text">Clean Beauty • 100% Vegano • Cruelty-Free • Ingredientes Puros</p>
+        </div>
+    </footer>
+
+    <script type="module" src="JS/app.js"></script>
+</body>
+</html>

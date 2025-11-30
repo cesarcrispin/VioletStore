@@ -1,0 +1,228 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Sérum Facial Vitamina C",
+      "price": 45000,
+      "category": "Cuidado Facial",
+      "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400",
+      "ingredients": ["Vitamina C", "Ácido Hialurónico", "Aloe Vera", "Extracto de Naranja"],
+      "certifications": ["Vegano", "Cruelty-Free", "Sin Químicos"],
+      "description": "Sérum iluminador con vitamina C pura que ayuda a reducir manchas y unificar el tono de la piel",
+      "usage": "Aplicar 3-4 gotas en rostro limpio por la mañana antes de la crema hidratante",
+      "stock": 15,
+      "reviews": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Crema Hidratante Natural",
+      "price": 38000,
+      "category": "Cuidado Facial",
+      "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400",
+      "ingredients": ["Manteca de Karité", "Aceite de Jojoba", "Extracto de Té Verde", "Vitamina E"],
+      "certifications": ["Vegano", "Cruelty-Free", "Ingredientes Puros"],
+      "description": "Hidratación profunda 24 horas con ingredientes naturales que nutren y protegen tu piel",
+      "usage": "Aplicar mañana y noche sobre rostro limpio con suaves masajes circulares",
+      "stock": 20,
+      "reviews": 4.8
+    },
+    {
+      "id": 3,
+      "name": "Limpiador Facial Suave",
+      "price": 28000,
+      "category": "Limpieza",
+      "image": "https://images.unsplash.com/photo-1556229010-aa1e1ca11b7c?w=400",
+      "ingredients": ["Agua de Rosas", "Manzanilla", "Glicerina Vegetal", "Extracto de Pepino"],
+      "certifications": ["Vegano", "Cruelty-Free", "Sin Sulfatos"],
+      "description": "Limpieza suave sin irritación, ideal para todo tipo de piel incluso las más sensibles",
+      "usage": "Aplicar sobre rostro húmedo, masajear suavemente y enjuagar con agua tibia",
+      "stock": 30,
+      "reviews": 4.6
+    },
+    {
+      "id": 4,
+      "name": "Mascarilla de Arcilla",
+      "price": 32000,
+      "category": "Tratamientos",
+      "image": "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400",
+      "ingredients": ["Arcilla Verde", "Carbón Activado", "Aceite de Lavanda", "Extracto de Árbol de Té"],
+      "certifications": ["Vegano", "Cruelty-Free", "Ingredientes Puros"],
+      "description": "Purifica y desintoxica la piel profundamente, minimizando poros y controlando el exceso de grasa",
+      "usage": "Aplicar capa gruesa evitando contorno de ojos, dejar 10-15 minutos y retirar con agua tibia",
+      "stock": 12,
+      "reviews": 4.7
+    },
+    {
+      "id": 5,
+      "name": "Tónico Facial Equilibrante",
+      "price": 25000,
+      "category": "Limpieza",
+      "image": "https://images.unsplash.com/photo-1571875257727-256c39da42af?w=400",
+      "ingredients": ["Hamamelis", "Agua de Rosas", "Niacinamida", "Extracto de Camomila"],
+      "certifications": ["Vegano", "Cruelty-Free", "Sin Químicos", "Ingredientes Puros"],
+      "description": "Equilibra el pH de la piel y minimiza la apariencia de los poros",
+      "usage": "Después de la limpieza, aplicar con algodón sobre rostro y cuello",
+      "stock": 25,
+      "reviews": 4.4
+    },
+    {
+      "id": 6,
+      "name": "Exfoliante Enzimático",
+      "price": 35000,
+      "category": "Tratamientos",
+      "image": "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=400",
+      "ingredients": ["Enzimas de Papaya", "Extracto de Piña", "Jojoba Beads", "Aloe Vera"],
+      "certifications": ["Vegano", "Cruelty-Free", "Sin Químicos"],
+      "description": "Exfoliación suave que renueva la piel sin agresión, dejándola suave y luminosa",
+      "usage": "Usar 2-3 veces por semana sobre piel húmeda, masajear y enjuagar",
+      "stock": 18,
+      "reviews": 4.6
+    },
+    {
+      "id": 7,
+      "name": "Contorno de Ojos Antiedad",
+      "price": 42000,
+      "category": "Cuidado Facial",
+      "image": "https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?w=400",
+      "ingredients": ["Cafeína", "Ácido Hialurónico", "Vitamina K", "Aceite de Argán"],
+      "certifications": ["Vegano", "Cruelty-Free", "Ingredientes Puros"],
+      "description": "Reduce ojeras, bolsas y líneas finas alrededor del contorno de ojos",
+      "usage": "Aplicar pequeña cantidad con toquecitos suaves alrededor de los ojos",
+      "stock": 14,
+      "reviews": 4.7
+    },
+    {
+      "id": 8,
+      "name": "Aceite Facial Nutritivo",
+      "price": 48000,
+      "category": "Cuidado Facial",
+      "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=400",
+      "ingredients": ["Aceite de Rosa Mosqueta", "Aceite de Jojoba", "Vitamina E", "Aceite de Argán"],
+      "certifications": ["Vegano", "Cruelty-Free", "Ingredientes Puros", "Sin Químicos"],
+      "description": "Nutrición profunda que restaura la elasticidad y luminosidad natural de la piel",
+      "usage": "Aplicar 2-3 gotas por la noche sobre rostro limpio",
+      "stock": 10,
+      "reviews": 4.9
+    },
+    {
+      "id": 9,
+      "name": "Protector Solar Natural SPF 50",
+      "price": 55000,
+      "category": "Protección Solar",
+      "image": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400",
+      "ingredients": ["Óxido de Zinc", "Extracto de Té Verde", "Aloe Vera", "Vitamina E"],
+      "certifications": ["Vegano", "Cruelty-Free", "Sin Químicos"],
+      "description": "Protección solar de amplio espectro con filtros físicos, sin químicos dañinos",
+      "usage": "Aplicar generosamente 15 minutos antes de la exposición solar, reaplicar cada 2 horas",
+      "stock": 22,
+      "reviews": 4.8
+    },
+    {
+      "id": 10,
+      "name": "Bálsamo Labial Nutritivo",
+      "price": 15000,
+      "category": "Cuidado Labial",
+      "image": "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=400",
+      "ingredients": ["Cera de Abeja Vegana", "Manteca de Cacao", "Aceite de Coco", "Vitamina E"],
+      "certifications": ["Vegano", "Cruelty-Free", "Ingredientes Puros"],
+      "description": "Hidratación intensa para labios suaves y protegidos todo el día",
+      "usage": "Aplicar sobre labios tantas veces como sea necesario",
+      "stock": 40,
+      "reviews": 4.5
+    },
+    {
+      "id": 11,
+      "name": "Agua Micelar Desmaquillante",
+      "price": 30000,
+      "category": "Limpieza",
+      "image": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=400",
+      "ingredients": ["Micelas Naturales", "Agua de Rosas", "Glicerina Vegetal", "Extracto de Pepino"],
+      "certifications": ["Vegano", "Cruelty-Free", "Sin Sulfatos", "Ingredientes Puros"],
+      "description": "Limpieza profunda que remueve maquillaje e impurezas sin frotar ni resecar",
+      "usage": "Aplicar con algodón sobre rostro, ojos y labios, no requiere enjuague",
+      "stock": 28,
+      "reviews": 4.6
+    },
+    {
+      "id": 12,
+      "name": "Sérum de Ácido Hialurónico",
+      "price": 50000,
+      "category": "Cuidado Facial",
+      "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400",
+      "ingredients": ["Ácido Hialurónico", "Aloe Vera", "Vitamina B5", "Extracto de Té Verde"],
+      "certifications": ["Vegano", "Cruelty-Free", "Sin Químicos"],
+      "description": "Hidratación profunda que rellena líneas finas y da efecto de piel jugosa",
+      "usage": "Aplicar sobre piel húmeda mañana y noche antes de la crema",
+      "stock": 16,
+      "reviews": 4.9
+    }
+  ],
+  "categories": [
+    "Cuidado Facial",
+    "Limpieza",
+    "Tratamientos",
+    "Protección Solar",
+    "Cuidado Labial"
+  ],
+  "certifications": [
+    "Vegano",
+    "Cruelty-Free",
+    "Sin Químicos",
+    "Ingredientes Puros",
+    "Sin Sulfatos"
+  ],
+  "blogPosts": [
+    {
+      "id": 1,
+      "title": "¿Qué es Clean Beauty?",
+      "excerpt": "Descubre los principios de la belleza limpia y por qué es importante para tu piel y el planeta.",
+      "content": "Clean Beauty es un movimiento que busca transparencia en los ingredientes de productos cosméticos...",
+      "author": "Equipo VioletStore",
+      "date": "2024-11-15"
+    },
+    {
+      "id": 2,
+      "title": "Ingredientes a Evitar",
+      "excerpt": "Conoce los sulfatos, parabenos y siliconas que debes evitar en tus productos de belleza.",
+      "content": "Los sulfatos, parabenos y siliconas son ingredientes comunes en cosméticos convencionales...",
+      "author": "Equipo VioletStore",
+      "date": "2024-11-10"
+    },
+    {
+      "id": 3,
+      "title": "Rutina de Skincare Natural",
+      "excerpt": "Aprende a crear una rutina de cuidado facial efectiva con productos naturales.",
+      "content": "Una rutina de skincare natural efectiva debe incluir limpieza, tonificación, tratamiento...",
+      "author": "Equipo VioletStore",
+      "date": "2024-11-05"
+    },
+    {
+      "id": 4,
+      "title": "Belleza Sustentable",
+      "excerpt": "Cómo tus elecciones de belleza pueden ayudar a proteger el medio ambiente.",
+      "content": "La industria de la belleza tiene un impacto significativo en el medio ambiente...",
+      "author": "Equipo VioletStore",
+      "date": "2024-11-01"
+    }
+  ],
+  "discountCodes": [
+    {
+      "code": "VIOLET10",
+      "discount": 10,
+      "type": "percentage",
+      "description": "10% de descuento en tu primera compra"
+    },
+    {
+      "code": "CLEAN20",
+      "discount": 20,
+      "type": "percentage",
+      "description": "20% de descuento en productos seleccionados"
+    },
+    {
+      "code": "ENVIOGRATIS",
+      "discount": 0,
+      "type": "shipping",
+      "description": "Envío gratis en compras superiores a $100,000"
+    }
+  ]
+}

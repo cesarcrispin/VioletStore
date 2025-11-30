@@ -1,0 +1,87 @@
+/* ==========================================
+   Sistema de grillas reutilizable
+   ========================================== */
+
+/*Grid genérico */
+.grid {
+    display: grid;
+    gap: var(--spacing-lg);
+}
+
+/*Grid de productos */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+/*Grid de blog */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+/*Grid de 2 columnas */
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*Grid de 3 columnas */
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*Grid de 4 columnas */
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/*Grid con gaps diferentes */
+.grid-gap-sm {
+    gap: var(--spacing-sm);
+}
+
+.grid-gap-md {
+    gap: var(--spacing-md);
+}
+
+.grid-gap-lg {
+    gap: var(--spacing-lg);
+}
+
+.grid-gap-xl {
+    gap: var(--spacing-xl);
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1024px) {
+    .grid-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}

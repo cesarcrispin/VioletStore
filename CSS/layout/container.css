@@ -1,0 +1,51 @@
+/* ==========================================
+   Estructura base del contenedor
+   ========================================== */
+
+.container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+}
+
+/*Contenedor fluido (sin max-width) */
+.container-fluid {
+    width: 100%;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+}
+
+/*Contenedor estrecho */
+.container-narrow {
+    max-width: 960px;
+}
+
+/*Secciones principales */
+.main-content {
+    min-height: calc(100vh - 200px);
+    padding: var(--spacing-xl) 0;
+}
+
+/*Espaciado de secciones */
+section {
+    margin-bottom: var(--spacing-2xl);
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+    .container {
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+    }
+    
+    .main-content {
+        padding: var(--spacing-lg) 0;
+    }
+}
