@@ -1,4 +1,36 @@
 
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    animation: fadeIn var(--transition-normal);
+}
+
+.modal.active {
+    display: flex !important;
+}
+
+.modal-content {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    max-width: 900px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-xl);
+    animation: scaleIn var(--transition-normal);
+}
+
 .modal-content::-webkit-scrollbar {
     width: 8px;
 }
@@ -17,7 +49,7 @@
     background: var(--text-secondary);
 }
 
-/*RESPONSIVE*/
+/* ============ RESPONSIVE ============ */
 @media (max-width: 768px) {
     .modal-content {
         width: 95%;

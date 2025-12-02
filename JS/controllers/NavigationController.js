@@ -1,6 +1,3 @@
-/* ==========================================
-   Controlador de navegación entre vistas
-   ========================================== */
 
 import { VIEWS, EVENTS } from '../config/constants.js';
 
@@ -67,18 +64,27 @@ export class NavigationController {
      * Oculta la vista actual
      */
     hideCurrentView() {
-        Object.values(this.viewElements).forEach(element => {
-            if (element) {
-                if (typeof element === 'object' && !element.classList) {
-                    // Es un objeto con múltiples elementos (HOME)
-                    Object.values(element).forEach(el => {
-                        if (el) el.classList.add('hidden');
-                    });
-                } else if (element.classList) {
-                    element.classList.add('hidden');
-                }
-            }
-        });
+        // Ocultar secciones de HOME
+        const heroSection = document.getElementById('heroSection');
+        const searchSection = document.getElementById('searchSection');
+        const productsGrid = document.getElementById('productsGrid');
+        
+        if (heroSection) heroSection.classList.add('hidden');
+        if (searchSection) searchSection.classList.add('hidden');
+        if (productsGrid) productsGrid.classList.add('hidden');
+
+        // Ocultar otras vistas
+        const cartView = document.getElementById('cartView');
+        const authView = document.getElementById('authView');
+        const profileView = document.getElementById('profileView');
+        const blogView = document.getElementById('blogView');
+        const advisorView = document.getElementById('advisorView');
+
+        if (cartView) cartView.classList.add('hidden');
+        if (authView) authView.classList.add('hidden');
+        if (profileView) profileView.classList.add('hidden');
+        if (blogView) blogView.classList.add('hidden');
+        if (advisorView) advisorView.classList.add('hidden');
     }
 
     /**
@@ -86,17 +92,41 @@ export class NavigationController {
      * @param {string} viewName 
      */
     showView(viewName) {
-        const element = this.viewElements[viewName];
+        switch(viewName) {
+            case VIEWS.HOME:
+                const heroSection = document.getElementById('heroSection');
+                const searchSection = document.getElementById('searchSection');
+                const productsGrid = document.getElementById('productsGrid');
+                
+                if (heroSection) heroSection.classList.remove('hidden');
+                if (searchSection) searchSection.classList.remove('hidden');
+                if (productsGrid) productsGrid.classList.remove('hidden');
+                break;
 
-        if (!element) return;
+            case VIEWS.CART:
+                const cartView = document.getElementById('cartView');
+                if (cartView) cartView.classList.remove('hidden');
+                break;
 
-        if (typeof element === 'object' && !element.classList) {
-            // Es un objeto con múltiples elementos (HOME)
-            Object.values(element).forEach(el => {
-                if (el) el.classList.remove('hidden');
-            });
-        } else if (element.classList) {
-            element.classList.remove('hidden');
+            case VIEWS.LOGIN:
+                const authView = document.getElementById('authView');
+                if (authView) authView.classList.remove('hidden');
+                break;
+
+            case VIEWS.PROFILE:
+                const profileView = document.getElementById('profileView');
+                if (profileView) profileView.classList.remove('hidden');
+                break;
+
+            case VIEWS.BLOG:
+                const blogView = document.getElementById('blogView');
+                if (blogView) blogView.classList.remove('hidden');
+                break;
+
+            case VIEWS.ADVISOR:
+                const advisorView = document.getElementById('advisorView');
+                if (advisorView) advisorView.classList.remove('hidden');
+                break;
         }
     }
 

@@ -1,5 +1,6 @@
 /* ==========================================
-   carrito de compras
+   CART MODEL
+   Modelo de datos para el carrito de compras
    Single Responsibility: Solo maneja lógica del carrito
    ========================================== */
 
@@ -8,6 +9,7 @@ export class Cart {
         this.items = [];
         this.discountCode = null;
         this.discountPercentage = 0;
+        console.log('✅ Cart creado');
     }
 
     /**
@@ -16,16 +18,27 @@ export class Cart {
      * @param {number} quantity 
      */
     addItem(product, quantity = 1) {
+        console.log('📦 Cart.addItem llamado:', { 
+            productId: product.id, 
+            productName: product.name,
+            quantity 
+        });
+        
         const existingItem = this.findItem(product.id);
         
         if (existingItem) {
+            console.log('   → Item ya existe, incrementando cantidad');
             existingItem.quantity += quantity;
         } else {
+            console.log('   → Agregando nuevo item');
             this.items.push({
                 product: product,
                 quantity: quantity
             });
         }
+        
+        console.log('   → Total items en carrito:', this.items.length);
+        console.log('   → Total cantidad:', this.getTotalItems());
     }
 
     /**
@@ -33,6 +46,7 @@ export class Cart {
      * @param {number} productId 
      */
     removeItem(productId) {
+        console.log('🗑️ Cart.removeItem:', productId);
         this.items = this.items.filter(item => item.product.id !== productId);
     }
 
@@ -42,6 +56,8 @@ export class Cart {
      * @param {number} quantity 
      */
     updateQuantity(productId, quantity) {
+        console.log('🔄 Cart.updateQuantity:', { productId, quantity });
+        
         if (quantity <= 0) {
             this.removeItem(productId);
             return;
@@ -119,6 +135,7 @@ export class Cart {
      * Limpia el carrito
      */
     clear() {
+        console.log('🧹 Cart.clear - Limpiando carrito');
         this.items = [];
         this.removeDiscount();
     }
@@ -147,7 +164,20 @@ export class Cart {
         return {
             items: this.items.map(item => ({
                 productId: item.product.id,
-                product: item.product.toJSON(),
+                // Guardar solo datos necesarios, no la instancia completa
+                product: {
+                    id: item.product.id,
+                    name: item.product.name,
+                    price: item.product.price,
+                    category: item.product.category,
+                    image: item.product.image,
+                    ingredients: item.product.ingredients,
+                    certifications: item.product.certifications,
+                    description: item.product.description,
+                    usage: item.product.usage,
+                    stock: item.product.stock,
+                    reviews: item.product.reviews
+                },
                 quantity: item.quantity
             })),
             discountCode: this.discountCode,
@@ -162,8 +192,14 @@ export class Cart {
     fromJSON(data) {
         if (!data) return;
         
-        this.items = data.items || [];
+        console.log('📥 Cart.fromJSON - Cargando datos:', data);
+        
+        // IMPORTANTE: No cargar items antiguos porque no son instancias de Product
+        // Solo inicializar vacío
+        this.items = [];
         this.discountCode = data.discountCode || null;
         this.discountPercentage = data.discountPercentage || 0;
+        
+        console.log('⚠️ Carrito cargado vacío (productos antiguos descartados)');
     }
 }

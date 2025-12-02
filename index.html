@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VioletStore - Clean Beauty</title>
     <link rel="stylesheet" href="CSS/main.css">
-
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -35,9 +35,11 @@
         </div>
     </header>
 
+    <!-- MAIN CONTENT -->
     <main class="main-content">
         <div class="container">
 
+            <!-- HOME VIEW -->
             <section class="hero" id="heroSection">
                 <h2>Bienvenido a VioletStore</h2>
                 <p class="hero-subtitle">"La Transparencia es Nuestro Ingrediente Secreto"</p>
@@ -51,33 +53,26 @@
                 </div>
                 
                 <div class="filters" id="filterButtons">
-
+                    <!-- Los filtros se renderizan aquí dinámicamente -->
                 </div>
             </section>
 
             <section class="products-grid" id="productsGrid">
-
+                <!-- Los productos se renderizan aquí dinámicamente -->
             </section>
 
-            <div class="modal" id="productModal">
-                <div class="modal-content">
-                    <button class="modal-close" id="closeModal">×</button>
-                    <div id="productDetail">
-
-                    </div>
-                </div>
-            </div>
-
+            <!-- CART VIEW -->
             <section class="cart-view hidden" id="cartView">
                 <h2>Carrito de Compras</h2>
                 <div id="cartItems">
-
+                    <!-- Items del carrito se renderizan aquí -->
                 </div>
                 <div class="cart-summary" id="cartSummary">
-
+                    <!-- Resumen del carrito se renderiza aquí -->
                 </div>
             </section>
 
+            <!-- AUTH VIEW -->
             <section class="auth-view hidden" id="authView">
                 <div class="auth-container">
                     <h2 id="authTitle">Iniciar Sesión</h2>
@@ -99,25 +94,27 @@
                 </div>
             </section>
 
+            <!-- PROFILE VIEW -->
             <section class="profile-view hidden" id="profileView">
                 <h2>Mi Perfil</h2>
                 <div class="profile-info" id="profileInfo">
-
+                    <!-- Info del perfil se renderiza aquí -->
                 </div>
                 <h3>Historial de Pedidos</h3>
                 <div class="orders-list" id="ordersList">
-
+                    <!-- Pedidos se renderizan aquí -->
                 </div>
             </section>
 
-
+            <!-- BLOG VIEW -->
             <section class="blog-view hidden" id="blogView">
                 <h2>Blog Clean Beauty</h2>
                 <div class="blog-grid" id="blogGrid">
-
+                    <!-- Posts del blog se renderizan aquí -->
                 </div>
             </section>
 
+            <!-- ADVISOR VIEW -->
             <section class="advisor-view hidden" id="advisorView">
                 <div class="advisor-container">
                     <h2>Asesoría Personalizada</h2>
@@ -130,9 +127,21 @@
                     </form>
                 </div>
             </section>
+
         </div>
     </main>
 
+    <!-- MODAL DE PRODUCTO (fuera del container para que se superponga) -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">×</button>
+            <div id="productDetail">
+                <!-- Detalle del producto se renderiza aquí -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <p class="footer-title">VioletStore</p>
