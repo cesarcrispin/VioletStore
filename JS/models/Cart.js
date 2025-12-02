@@ -193,9 +193,7 @@ export class Cart {
         if (!data) return;
         
         console.log('📥 Cart.fromJSON - Cargando datos:', data);
-        
-        // IMPORTANTE: No cargar items antiguos porque no son instancias de Product
-        // Solo inicializar vacío
+
         this.items = [];
         this.discountCode = data.discountCode || null;
         this.discountPercentage = data.discountPercentage || 0;
